@@ -1,0 +1,161 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Friggeri Resume/CV
+% XeLaTeX Template
+% Version 1.0 (5/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Adrien Friggeri (adrien@friggeri.net)
+% https://github.com/afriggeri/CV
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX and the bibliography, if used,
+% needs to be compiled with biber rather than bibtex.
+%\documentclass[]{friggeri-cv} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[]{ly-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
+\begin{document}
+\header{liang}{yu}{Software Engineer} % Your name and current job title/field
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION
+%----------------------------------------------------------------------------------------
+\begin{aside} % In the aside, each new line forces a line break
+\section{contact}
+22 Orient Street
+Malden, MA 02148
+United States
+~
+(617) 901 0618
+~
+\href{mailto:yuliang.name@gmail.com}{yuliang.name@gmail.com}
+\href{http://www.linkedin.com/in/liangyu2012neu}{LinkedIn: Liang Yu}
+\section{programming languages}
+Java c cpp python
+shell c\# \LaTeX
+\section{operating system}
+Mac OS X Ubuntu iOS
+Android Windows
+\section{web services}
+Javascript 
+CSS3 HTML5 ActionScript
+Dojo GWT GXT Ajax
+REST SOAP Flex
+\section{development tools}
+Eclipse SublimeText VIM
+VisualStudio Fiddler GDB
+GIT SVN Windows Azure
+Hadoop MapReduce Xen
+Jenkins MySQL Firebug
+\end{aside}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{education}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2010-2012}
+{Masters of Science} 
+%{Masters {\normalfont of Science}}
+{Northeastern Unviersity, Boston, United States}
+{Computer Science \hspace{4mm} \footnotesize{GPA 3.54/4.0}}
+%{\emph{Computer Science} \\ \footnotesize{GPA 3.5/4.0}}
+%------------------------------------------------
+\entry
+{2005-2009}
+{Bachelor of Science}
+{Nanchang University, Nanchang, China}
+{Information and Computational Science}
+%------------------------------------------------
+\end{entrylist}
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\section{experience}
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2013-Now}
+{Integrated Computer Solutions}
+{Bedford, Massachusetts}
+{\emph{Mobile Software Developer}\\
+Inkarus Game
+\begin{itemize}
+  \item Modified existed Code to add advertisements in the Game by leveraging the Microsfot Advertsing SDK.
+  \item Used the WinJS library and HTML 5 to added two dialogs to submit results to the Windows Azure Serve and retrieve the others' result from the serve.
+  \item Fixed minor bugs in the legacy codes.
+\end{itemize}
+Questia
+\begin{itemize}
+  \item Leveraged the Model-View-Viewmodel, Service Locator, Observer patterns in the development.
+  \item Used XAML to build views and binded them to the datamodels, which are written in C\#.
+  \item Used the Fiddler to analyze the data transferred between the client and the Questia Server.
+\end{itemize}}
+%------------------------------------------------
+\entry
+{2012}
+{Acme Packet}
+{Bedford, Massachusetts \small{(Eight Months)}}
+{\emph{Co-op Enginner Intern}
+\begin{itemize}
+  \item Helped with ASC automated testing framework by writing twenty pyton tests on SIP protocol.
+	\item Identified bugs in four existing web services application, which were written separately in Java, GWT/GXT, JavaScript and Flex
+  \item Developed the Call-Transfer web services application with JavaScript and Dojo API.
+	\item Implemented performance tests in Python scripts to measure product performance.
+  \item Enhanced the quality of an existing iOS mobile application by fixing two bugs and improved its UI and workflow by implementing good interface design principles.
+\end{itemize}}
+%------------------------------------------------
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{relevant coursework}
+
+\begin{entrylist}
+%------------------------------------------------Analyzing Company Stock Prices Via Twitter Posts
+\entry
+{graduate}
+{Big Data, Cloud Computing}
+{Northeastern University}
+{courses: \emph{Parallel Computing in MapReduce, Introduction to Database}\vspace*{4pt}}
+%------------------------------------------------
+\end{entrylist}
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{}
+{Computer System}
+{Northeastern University}
+{courses: \emph{Computer System, High Performance Computing}\vspace*{4pt}}
+%------------------------------------------------
+\end{entrylist}
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{}
+{Software Design}
+{Northeastern University}
+{courses: \emph{Program Design Paradigms, Managing Software Development}\vspace*{4pt}}
+%------------------------------------------------
+\end{entrylist}
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{}
+{Algorithms}
+{Northeastern University}
+{courses: \emph{Algorithms, Advanced Algorithms}}
+%------------------------------------------------
+\end{entrylist}
+\end{document}
