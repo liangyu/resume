@@ -1,0 +1,91 @@
+\documentclass[margin,line]{res}
+
+
+\oddsidemargin -.5in
+\evensidemargin -.5in
+\textwidth=6.0in
+\itemsep=0in
+\parsep=0in
+% if using pdflatex:
+%\setlength{\pdfpagewidth}{\paperwidth}
+%\setlength{\pdfpageheight}{\paperheight} 
+
+\newenvironment{list1}{
+  \begin{list}{\ding{113}}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
+      \setlength{\leftmargin}{0.17in}}}{\end{list}}
+\newenvironment{list2}{
+  \begin{list}{$\bullet$}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
+      \setlength{\leftmargin}{0.2in}}}{\end{list}}
+
+\pagestyle{empty}
+\begin{document}
+
+\name{Liang Yu \vspace*{.1in}}
+
+\begin{resume}
+\section{\sc Contact Information}
+\vspace{.05in}
+\begin{tabular}{@{}p{2in}p{4in}}  
+4 Kimball Court & {\it E-mail:}  yuliang.name@gmail.com \\       
+Woburn, MA 01730 USA  & {\it WWW:} www.lyu9.com \\     
+\end{tabular}
+
+\section{\sc Computer Skills} 
+\begin{list2}
+\item Statistical Packages:  R, S-Plus, BUGS; some experience
+  with SAS; extensive use of C and Fortran statistical libraries.
+\item Languages:  C++, Perl, Pascal, some use of Unix shell scripts,
+  MPI parallel processing library.
+\item Applications: Generic Mapping Tools (GMT) - Unix mapping software, \LaTeX, common Windows
+  database, spreadsheet, and presentation software
+\item Algorithms: Experience programming Markov Chain Monte Carlo
+  simulations of Bayesian posterior distributions
+\item Operating Systems:  Unix/Linux, Windows.\\ 
+\end{list2}
+
+\section{\sc Experience}
+{\bf Bureau of Transportation Statistics, U.S. Department of
+  Transportation}, Washington, District of Columbia USA
+
+\vspace{-.3cm}
+{\em Summer researcher} \hfill {\bf May, 2000 - August, 2000}\\
+Carried out several consulting projects, including modelling of
+injuries to cadavers in crash test experiments, analysis of airline
+delay data, and advice on analysis of airline economics data.
+
+{\bf Abt Associates}, Bethesda, Maryland USA
+
+\vspace{-.3cm}
+{\em Associate Programmer Analyst and Research Assistant} \hfill {\bf
+  October, 1994 - August, 1996}\\
+Researcher and computer model developer for U.S. EPA Regulatory Impact
+Analysis of Section 403 Lead Paint Hazard Rule.  Other projects
+included database analysis, literature reviews, and cost-benefit analysis.
+
+
+\section{\sc Education}
+{\bf Northeastern University}, Boston, Massechussete USA\\
+\vspace*{-.1in}
+\begin{list1}
+\item[] Master of Science, December, 2012
+\end{list1}
+
+{\bf Nanchang University}, Nanchang, Jiangxi China\\
+%{\em Department of Mathematics and Statistics} 
+\vspace*{-.1in}
+\begin{list1}
+\item[] Bachelor of Science,  May, 2009
+\end{list1}
+
+
+%\vspace*{-.25in}  
+%\begin{verbatim}http://www.nist.gov/speech/publications/tw00/html/abstract.htm#cp1-50\end{verbatim}
+
+\end{resume}
+\end{document}
