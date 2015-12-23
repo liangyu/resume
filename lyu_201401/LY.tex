@@ -1,0 +1,113 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Important notes:
+% This template needs to be compiled with XeLaTeX and the bibliography, if used,
+% needs to be compiled with biber rather than bibtex.
+%\documentclass[]{ly-cv} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[]{ly-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
+\begin{document}
+\header{Yu,}{ Liang}{} % Your name and current job title/field
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION
+%----------------------------------------------------------------------------------------
+\begin{aside} % In the aside, each new line forces a line break
+\section{contact}
+Woburn, MA
+(617) 901 0618
+\href{mailto:yuliang.name@gmail.com}{yuliang.name@gmail.com}
+\href{http://lyu9.com}{lyu9.com}
+\section{programming languages}
+Java python c cpp 
+pig shell \LaTeX
+\section{operating system}
+Mac OS X Ubuntu Windows
+\section{web development}
+Javascript CSS3 HTML5 
+Ajax REST Flex Dojo 
+Bootstrap GWT
+\section{mobile development}
+Android Windows 8 iOS
+\section{development tools}
+Eclipse SublimeText VIM
+GIT MySQL PostgreSQL
+Hadoop MapReduce
+Firebug Fiddler GDB
+Jenkins Tomcat 
+Windows Azure
+\end{aside}
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\section{experience}
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2014}
+{SQA Analyst}
+{Bedford, Massachusetts}
+{\emph{Oracle America Inc}
+\begin{itemize}
+  \item Wrote scripts to run the unit tests.
+\end{itemize}}
+\entry
+{2013 - 2014}
+{Software Developer}
+{Bedford, Massachusetts}
+{\emph{Integrated Computer Solutions}\vspace{1mm}\\
+Topics (Android App)
+\begin{itemize}
+  \item Wrote a NetworkManager Class to provide clear and convenient access to the Topic server.
+  \item Implemented fourteen AsyncTask subclasses to call the REST API and parse the responses in JSON format.
+  \item Leveraged the content provider to save data in SQLite DB and retrieve data to popluate the adapters.
+  \item Bridged the UI Components and the datasources by extending Android BaseAdapter class.
+  \item Built the UI with fragments and navigation drawer.
+\end{itemize}
+Topics (REST API Server)
+\begin{itemize}
+  \item Improved the APIs and database of the Topic Server, which was powered by Python and PostgreSQL.
+  \item Implemented unit tests for APIs with pytest in Ubuntu environment.
+  \item Used Agile method to work with other group memebers.
+\end{itemize}
+Inkarus Game (HTML5 and Javascript Game)
+\begin{itemize}
+  \item Added three advertisement banners in the GameOver page by leveraging the Microsfot Advertsing SDK.
+  \item Submitted the score and screenshot of the solution to Windows Azure cloud and rendered data from cloud to user by using WinJS library and HTML5.
+  \item Fixed animation bugs in the legacy codes.
+\end{itemize}}
+%------------------------------------------------
+\entry
+{2012}
+{Software Enginner Intern}
+{Bedford, Massachusetts}
+{\emph{Acme Packet}
+\begin{itemize}
+  \item Helped with ASC automated testing framework by writing twenty Python unit tests on SIP protocol.
+	\item Identified and fixed bugs in four existing web services applications.
+  \item Developed the Call-Transfer web services application with JavaScript and Dojo API.
+  \item Enhanced the quality of an existing iOS mobile application by fixing two bugs and improved its UI and workflow by implementing good interface design principles.
+\end{itemize}}
+%------------------------------------------------
+\end{entrylist}
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\section{education}
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2010-2012}
+{Masters of Science} 
+%{Masters {\normalfont of Science}}
+{Northeastern Unviersity, Boston, United States}
+{Computer Science \hspace{4mm} \footnotesize{GPA 3.54/4.0}}
+%{\emph{Computer Science} \\ \footnotesize{GPA 3.5/4.0}}
+%------------------------------------------------
+\entry
+{2005-2009}
+{Bachelor of Science}
+{Nanchang University, Nanchang, China} 
+{Information and Computational Science}
+%------------------------------------------------
+\end{entrylist}
+
+\end{document}
