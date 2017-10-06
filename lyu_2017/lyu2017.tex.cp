@@ -154,9 +154,10 @@ C Programming Language
 \textbf{TSM Project, Linux, iOS, Android platforms}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightitemize}
-\item Improved the existed iOS app, linux app to test the TSM SDK API.
+\item Enhanced the exsited iOS app to test more features. Rewrote an new version of iOS app with Swift language, and iOS 10 SDK. Added read audio communication with Oracle SBC, Upgrade existed tsmserver to handle multi-thread clients.
+\item Upgrated the Android Test App with Android 5.0 SDK.
 \item Wrote Tcl scripts to automate around 1000 test cases, which boost the test coverage by 500 Percentage. 
-\item Raised 200+ defects, including critical defects that revealed the product issues in performance and capacity.
+\item Raised 200 defects, including critical defect revealing the sever defect in performance and capacity. pointing out the potential fix solutions
 \end{tightitemize}
 
 \sectionspace % Some whitespace after the section
@@ -199,23 +200,23 @@ C Programming Language
 \item Configured four VMs on XenServer to run SIP tests.
 \end{tightitemize}
 
-%\runsubsectionnormal{Freelancer}
-%\descriptbold{| iOS App Developer}
+\runsubsectionnormal{Freelancer}
+\descriptbold{| iOS App Developer}
 
-%\location{Subway Tracking App for MTBA}
-%\begin{tightitemize}
-%\item 
-%\end{tightitemize}
+\location{Subway Tracking App for MTBA}
+\begin{tightitemize}
+\item 
+\end{tightitemize}
 
-%\location{Travelling App}
-%\begin{tightitemize}
-%\item 
-%\end{tightitemize}
+\location{Travelling App}
+\begin{tightitemize}
+\item 
+\end{tightitemize}
 
-%\location{FlightRadar 24 app for Boston Plane Spotting}
-%\begin{tightitemize}
-%\item 
-%\end{tightitemize}
+\location{FlightRadar 24 app for Boston Plane Spotting}
+\begin{tightitemize}
+\item 
+\end{tightitemize}
 
 \sectionspace % Some whitespace after the section
 
