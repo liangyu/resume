@@ -1,0 +1,80 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{green}                              % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Liang}{YU}
+%\title{Resumé title}                               % optional, remove / comment the line if not wanted
+\address{Boston, MA}{}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+1~(617)~901~0168}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{yuliang.name@gmail.com}                               % optional, remove / comment the line if not wanted
+%\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content   
+%----------------------------------------------------------------------------------
+\begin{document}
+%-----       letter       ---------------------------------------------------------
+% recipient data
+\recipient{ForeFlight Portland Team}{ForeFlight, Inc.\\4 Canal Plaza\\Portland, ME 04101}
+%\date{January 01, 1984}
+\opening{Dear Libby Johnson}
+\closing{Yours faithfully,}
+\enclosure[Attached]{resume}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\makelettertitle
+
+
+My name is Liang Yu. I would like to apply for the iOS Mapping Developer position in the Portland office. I hold an M.S. in Computer Science from Northeastern University and B.S. in Mathematics from Nanchang University. After graduated from Northeastern University, I utilized my weekends to pursue my aviation dream at Horizon Aviation flight school and finally gained the private pilot license in June 2015. 
+
+I have rich experience in both software developing and testing. In the undergraduate college, even before Android and iOS phones have dominated the market, I developed an online shopping website for mobile phones with J2EE, MySQL and WAP protocol in 2009. In Northeastern, I continued to enrich my Computer Science knowledge by taking courses in Software Design and Operation System directions and gained the M.S. in late 2012.
+
+Prior to joining Oracle, I finished an 8 months internship at Acme Packet and was a full-time software developer at ICS (Integrated Computer Solution, Inc). At Acme Packet, I gained valuable experience on web services development. I used Javascript to develop a Call-Transfer web service application with SOAP API and contributed to the automated testing framework, which was implemented in Python.
+
+At Oracle, I am responsible for enhancing the existed iOS/Linux apps to test new SDK features and writing scripts to test previous TSM SDK releases periodically. Currently, I am in the Agile team and test the new APIs for our Networking Products. 
+
+In my spare time, I continued to learn new technology to stay current. I learned Swift and Adobe Illustrator CC and published my personal iOS App "HerBostonT" in the App Store. This Swift-based app can track the live locations of all MBTA vehicles and provide the schedule data for every station/stop. Also, I explored the ADS-B technology with a Raspberry PI, which made ForeFlight an indeed powerful tool.
+
+Attached are my resume and the screenshot of my App for your review. I am enthusiastic about the aviation and I wish I can combine the work and hobby together. I look forward to meeting with those Aviation geeks at ForeFlight. Thank you for your time and consideration. Relocation to Portland, ME is OK with me. 
+
+
+\makeletterclosing
+
+\end{document}
+
+
+%% end of file `template.tex'.
