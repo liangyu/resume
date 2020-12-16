@@ -1,0 +1,169 @@
+\documentclass[12pt]{article}
+
+%% Define some new colors
+\usepackage{xcolor}
+\definecolor{mBlue}{RGB}{51, 77, 167}
+\newcommand{\blue}[1]{{\color{mBlue}#1}}
+
+%% Page and text formatting
+\usepackage[left=1.0in, right=1.0in, top=1.0in, bottom=1.0in]{geometry} % margins
+\usepackage{setspace}
+\singlespacing % No more than 6 lines of text per inch
+\usepackage{amsmath, amsfonts}
+\usepackage[T1]{fontenc}
+\usepackage{times}
+
+%% Make the sections start with (a), (b), etc.
+\renewcommand\thesection{(\alph{section})}
+\renewcommand\thesubsection{(\alph{subsection})}
+
+%% Set up footer
+\usepackage{fancyhdr}
+\fancypagestyle{CVfooter}
+{
+ \lhead{}
+ \chead{}
+ \rhead{}
+ \lfoot{\small{Jennifer E.\ Hoffman}}
+ \cfoot{\small{\today}}
+ \rfoot{\small{\thepage/2}}
+ \renewcommand{\headrulewidth}{0.0pt}
+ \renewcommand{\footrulewidth}{0.5pt}
+}
+
+%% Set up hyperlinks
+\usepackage[linktoc=page]{hyperref}
+\hypersetup{
+  colorlinks = true,
+  urlcolor = mBlue,
+  citecolor = mBlue,
+  linkcolor = mBlue,
+}
+
+%% Set up citations and bibliography
+\usepackage{bibunits}
+\usepackage[sort&compress,super]{natbib}
+\defaultbibliographystyle{apsrev4-2}
+\setcitestyle{comma}
+\setlength{\bibsep}{0pt}
+\renewcommand{\bibnumfmt}[1]{\ \ \ #1.}
+\renewcommand\refname{\vspace{-7mm}}
+
+%% This allows us to start a bibliography with arbitrary number
+\usepackage{etoolbox}
+\makeatletter
+\newcommand*{\newbibstartnumber}[1]{%
+  \apptocmd{\thebibliography}{%
+    \global\c@NAT@ctr #1\relax
+    \addtocounter{NAT@ctr}{-1}%
+  }{}{}%
+}
+\makeatother
+
+%% Reduce whitespace around lists (globally)
+\usepackage{enumitem}
+\setlist[itemize]{nosep,left=0pt}
+\setlist[enumerate]{nosep}
+\setlist[description]{nosep}
+
+%% Formatting for sections
+\usepackage[compact]{titlesec}
+\titleformat*{\section}{\normalsize\bfseries}
+\titlespacing*{\section}{0mm}{2mm}{1mm}[0mm] % left top bottom right
+\titleformat*{\subsection}{\normalsize\bfseries}
+\titlespacing*{\subsection}{0mm}{2mm}{1mm}[0mm]
+\titleformat*{\subsubsection}{\normalsize\bfseries\itshape}
+\titlespacing*{\subsubsection}{0mm}{1mm}{0mm}[0mm]
+
+\begin{document}
+\pagestyle{CVfooter}
+
+\noindent \textbf{\uppercase{Biographical Sketch}}
+\vspace{2mm}
+
+\noindent \textbf{Jennifer E.\ Hoffman}
+\vspace{1mm}
+
+\noindent\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}l r}
+Professor of Physics & Email: \href{mailto:jhoffman@physics.harvard.edu}{jhoffman@physics.harvard.edu} \\
+Harvard University & Web: \href{http://hoffman.physics.harvard.edu/}{http://hoffman.physics.harvard.edu/} \\
+17 Oxford Street & Phone: 617-495-3734 \\
+Cambridge, MA 02138 & Fax: 617-495-0416 \\
+\hline
+\end{tabular*}
+
+\section{Education \& Training}
+
+\begin{tabular}{l l l l}
+Stanford University & Palo Alto, CA & Applied Physics & Postdoc Fellow, 2003-2004 \\
+University of California & Berkeley, CA & Physics & Ph.D., 2003 \\
+Harvard University & Cambridge, MA & Physics & B.A. \textit{magna cum laude}, 1999 \\
+\end{tabular}
+
+\section{Research \& Professional Experience}
+
+\begin{tabular}{l l}
+2019 -- present & Clowes Professor of Science, Harvard University \\
+2015 -- present & Professor of Physics, Harvard University \\
+2015 -- 2016 & Canada Excellence Research Chair, University of British Columbia \\
+2010 -- 2015 & Associate Professor of Physics, Harvard University \\
+2005 -- 2010 & Assistant Professor of Physics, Harvard University \\
+\end{tabular}
+
+\section{Publications}
+
+\vspace{2mm}
+\noindent \textbf{\textit{\ \ Most closely related}}
+\begin{bibunit}
+\nocite{apsrev42Control}
+\nocite{PirieNatPhys2020,MattPRB2020,WebbPRX2019,GozarNanoLett2017,HuangPRL2015}
+\putbib[publications]
+\end{bibunit}
+
+\vspace{2mm}
+\noindent \textbf{\textit{\ \ Other significant publications}}
+\newbibstartnumber{6}
+\begin{bibunit}
+\nocite{apsrev42Control}
+\nocite{CominScience2014,ZeljkovicNanoLetters2014,SoumyanarayananPNAS2013,ZeljkovicScience2012,HoffmanScience2002qpi}
+\putbib[publications]
+\end{bibunit}
+
+\section{Synergistic Activities}
+
+\begin{enumerate}
+
+\item Regular referee for NSF, DOE, DOD, Nature, Science, APS \& AIP journals, etc.
+
+\item Research Science Institute mentor, 2010-2011, 2014, 2017-2020 \\
+    (Mentored high school students through summer research projects and written \& oral presentations for several science fair competitions; 2017 student won \$25,000 college scholarship for his work; 2018 student won \$4,000 college scholarship for her work.)
+
+\item Mentor women graduate students:
+\begin{itemize}
+    \item Monthly meetings with 3 mentees through HGWISE.
+    \item May 2019, organized a 3-day professional development retreat focused on writing, negotiation and leadership skills for women graduate students \& postdocs in Physics and Astronomy at Harvard.
+    \item October 2019, sponsored a 3-day ``Grad School Application 101'' workshop for undergraduate women of color.
+\end{itemize}
+
+\item Dedicated teacher and mentor, evidenced by numerous awards:
+\begin{itemize}
+    \item Spark Award, ``for inspiring the next generation of women in science'', Harvard, 2009
+    \item Fannie Cox Award, given annually to two faculty members in recognition of
+``outstanding teaching in introductory science courses.'' Harvard, 2012 (\href{https://news.harvard.edu/gazette/story/2012/10/two-professors-win-fannie-cox-prize/}{link})
+    \item Roslyn Abramson Award, given annually to two faculty members in recognition of
+``excellence and sensitivity in teaching undergraduates.'' Harvard, 2012 (\href{https://news.harvard.edu/gazette/story/2012/05/hoffman-beerbohm-win-teaching-prize/}{link})
+    \item Harvard Graduate Women in Science \& Engineering (HGWISE), Mentor of the Year Award, 2018 (\href{https://gsas.harvard.edu/news/stories/lean-lean-hgwise-mentor-year-award}{link})
+\end{itemize}
+
+\item Advocacy for women \& URMs in science:
+\begin{itemize}
+    \item Heising Simons Foundation, Physics and Astronomy Leadership Council, 2016 - present
+    \item Chair of Harvard Physics Department Mentorship Committee, 2020
+    \item Chair of Harvard Physics Department Equity \& Inclusion Committee, 2018 – 2019
+    \item Chair of Harvard Physics Department Graduate Admissions Committee, 2017 - 2019
+\end{itemize}
+
+\end{enumerate}
+
+\end{document}
+
