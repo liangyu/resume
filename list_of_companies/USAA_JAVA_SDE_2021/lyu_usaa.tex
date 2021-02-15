@@ -1,0 +1,250 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Liang Yu CV/Resume
+% XeLaTeX Template
+% Version 1.0 (5/5/2014)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Debarghya Das (http://www.debarghyadas.com)
+% With extensive modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper]{lyu-resume} % Use US Letter paper, change to a4paper for A4 
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+%\lastupdated % Print the Last Updated text at the top right
+
+\namesection{Liang}{Yu}{ % Your name
+%\urlstyle{same}\url{http://yuliang.xyz} \\ % Your website, LinkedIn profile or other web address
+\href{mailto:yuliang.name@gmail.com}{yuliang.name@gmail.com} | 617.901.0618 % Your contact information
+}
+
+%----------------------------------------------------------------------------------------
+%	LEFT COLUMN
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.33\textwidth} % The left column takes up 33% of the text width of the page
+
+%------------------------------------------------
+% Skills
+%------------------------------------------------
+
+\section{Skills}
+
+\location{Languages:}
+Java \textbullet{} Swift \textbullet{} C \textbullet{} C++\\
+Objective-C \textbullet{} Shell \textbullet{} Lisp \\
+Python \textbullet{} Tcl \textbullet{} \LaTeX \textbullet{} Ruby\\
+
+\vspace{2 mm}
+
+\location{Operating System:}
+macOS \textbullet{} CentOS \textbullet{} Red Hat \\
+
+\vspace{2 mm}
+
+\location{networking:}
+TCP/IP \textbullet{} SIP \textbullet{} EXFO  \\
+\textbullet{} RTP \textbullet{} TLS/SSL \textbullet{} IPSec \\
+SIPP \textbullet{} Wireshark \textbullet{} Fiddler \\
+
+\vspace{2 mm}
+
+\location{Web Development:}
+REST \textbullet{} SOAP \textbullet{} Javascript \\
+HTML5 \textbullet{} CSS \textbullet{} Ajax \\ 
+Bootstrap \textbullet{} MySQL \\ 
+
+\vspace{2 mm}
+
+\location{Mobile Development:}
+iOS \textbullet{} XCode \textbullet{} SwiftUI \\ 
+Android \textbullet{} Android Studio \\
+
+\vspace{2 mm}
+
+\location{Cloud and Virtulization Platforms:}
+AWS \textbullet{} Microsoft Azure \textbullet{} VMware ESXi \\
+
+\vspace{2 mm}
+
+\location{Development Tools:}
+GIT \textbullet{} SVN \textbullet{} Eclipse \textbullet{} Postman \\
+Visual Studio \textbullet{} Pycharm \textbullet{} GDB \\
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+% Links
+%------------------------------------------------
+
+%\section{Links} 
+
+%Github:// \href{https://github.com/liangyu}{\bf liangyu} \\
+%LinkedIn:\\
+%\href{https://www.linkedin.com/in/liangyu8}{\bf www.linkedin.com/in/liangyu8} \\
+
+%\sectionspace % Some whitespace after the section
+
+
+%------------------------------------------------
+% Education
+%------------------------------------------------
+
+\section{Education} 
+
+\subsection{Northeastern University}
+
+\descript{MS in Computer Science}
+\location{2010.9 - 2012.12 | Boston, MA}
+College of Computer and Information Science
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+
+\subsection{Nanchang University}
+
+\descript{BS in Mathematics}
+\location{2005.9 - 2009.6 | Nanchang, China}
+College of Science
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+% Coursework
+%------------------------------------------------
+
+\section{Coursework}
+
+\subsection{Graduate}
+
+Program Design Paradigms in Lisp \\
+Advanced Algorithms \\
+High Performance Computing(C)\\
+Computer System(C) \\
+Parall Computing in MapReduce(Java) \\
+Managing Software Development(Java)
+
+\sectionspace % Some whitespace after the section
+%------------------------------------------------
+\subsection{Undergraduate}
+Assemble Language(IBM X86) \\
+C Programming Language \\
+Data Structure in C \\
+Introduction to Database
+
+\sectionspace % Some whitespace after the section
+%----------------------------------------------------------------------------------------
+\end{minipage} % The end of the left column
+\hfill
+%
+%----------------------------------------------------------------------------------------
+%	RIGHT COLUMN
+%----------------------------------------------------------------------------------------
+%
+\begin{minipage}[t]{0.66\textwidth} % The right column takes up 66% of the text width of the page
+%------------------------------------------------
+% Experience
+%------------------------------------------------
+\section{Experience}
+\runsubsection{Oracle}
+\descript{| Senior Software Engineer in Test}
+\location{2014.2 – 2020.11 | Bedford, MA}
+\textbf{TSM Project (Linux, iOS, Android platforms)}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightitemize}
+\item Enhanced the exsited iOS/Linux apps to test new features and maintained the existed Android Test App.
+\item Wrote scripts to automate more than 1,000 test cases for TSM SDK. It extended the test coverage by 5 times. 
+\item Raised 200+ product defects, including critical defects that affected performance and capacity.
+\item Familiar with TLS/SSL protocols and socket programming in Linux environment.
+\item Designed test plan documents and executed the capacity and performance tests with shell scripts and EXFO.
+\end{tightitemize}
+
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\textbf{SBC REST API Project}
+\begin{tightitemize}
+\item Used the scrum board to track the work progress in the Agile mode.
+\item Added hundreds of test cases into the RAID automation Testframe so that regression test can be done in the night time.
+\item Used the Postman to test SBC APIs.
+\item opened dozens of defects.
+\end{tightitemize}
+
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\textbf{Virtualized SBC on private cloud and public cloud}
+\begin{tightitemize}
+\item Integrated the EXFO APIs into the Tcl script to automate various performance test cases that would otherwise be repeated for different CPU core combinations(signaling, forwarding, Transcodeing or DOS cores).
+\item Decreased the weeks of mannual test effort to a couple of days and increased the usage of expensive test equipments in the night time.
+\item Deployed the virtual SBCs and Linux VMs on the AWS cloud and Azure cloud. 
+\item Designed the networking diagram for the testbed on the clouds and documented it on the confluence page.
+\item Installed the in-house made Anvil Testframe on those Linux VMs and solved the library dependency issues.
+\item Performed Capacity Tests on the AWS and Azure platform 
+\item Tested the SIP call between the AWS cloud and Azure cloud.
+\item Tested the DDOS protection feature in the SBC
+\item Executed tests related to authentication and authorization and accounting with remote AAA servers (TACACS+ and Radius).
+\end{tightitemize}
+
+\sectionspace % Some whitespace after the section
+%------------------------------------------------
+\runsubsectionnormal{Integrated Computer Solutions}
+\descriptbold{| Software Developer}
+
+\location{2013.4 – 2014.2 | Bedford, MA}
+\textbf{Topics (Android App)}
+\begin{tightitemize}
+\item Used AsyncTask class to call the Restful API and parsed the reponses in JSON format.
+\item Implemented unit tests with pytest in Ubuntu environment.
+\end{tightitemize}
+
+\vspace{2 mm}
+\textbf{Inkarus (Javascript Game on Windows Tablet)}
+\begin{tightitemize}
+\item Integrated existing App with the Microsoft Advertising SDK.
+\item Implemented the feature to synchronize the score and screenshot of the solution to Windows Azure cloud and retrieve data from cloud by using WinJS libraray and HTML5.
+\end{tightitemize}
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+\runsubsectionnormal{Acme Packet}
+\descriptbold{| Software Developer Intern}
+
+\location{2012.1 – 2012.8 | Bedford, MA}
+\begin{tightitemize}
+\item Contributed to ASC automated testing framework written in Python.
+\item Developed a Call-Transfer web service application with SOAP API and Javascript.
+\item Configured VMs on XenServer to run various SIP tests.
+\end{tightitemize}
+
+%-------------Optional--------------------------
+%\runsubsectionnormal{Freelancer Project}
+%\descriptbold{| iOS App: theBostonT}
+
+%\location{2017}
+%\begin{tightitemize}
+%\item Retrieved the real-time traffic data via the REST API provided by Boston MTBA.
+%\item Familiar with iOS framework, like Corelocation, Mapkit, Network, UITableView and UICollectionView.
+%\item Implemented design patterns to maintain clean and clean codes.
+%\item Used GitHub for source control.
+%\end{tightitemize}
+
+
+\sectionspace % Some whitespace after the section
+%----------------------------------------------------------------------------------------
+\end{minipage} % The end of the right column
+%----------------------------------------------------------------------------------------
+\end{document}
