@@ -1,0 +1,39 @@
+
+
+\documentclass[11pt, a4paper]{awesome-cv} % A4 paper size by default, use 'letterpaper' for US letter
+
+\geometry{left=1.8cm, top=1.5cm, right=1.8cm, bottom=1.8cm, footskip=.5cm} % Configure page margins with geometry
+
+\fontdir[fonts/] % Specify the location of the included fonts
+
+\colorlet{awesome}{awesome-darknight} % Default colors include: awesome-emerald, awesome-skyblue, awesome-red, 
+
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad} % If you would like to change the social information 
+
+\name{Liang}{Yu}
+\address{Boston, Massachusetts}
+\mobile{(617.901.0618}
+
+\email{yuliang.name@gmail.com}
+
+
+\position{Full Stack Software Engineer }% Your expertise/fields
+\quote{"Green Card Holder, No Sponsorship Required, Relocation OK \\ Published iOS App `TinBoston` in App Store "} % A quote or statement
+
+\makecvfooter{\today}{Liang Yu~~~·~~~Résumé}{\thepage} % Specify the letter footer with 3 arguments: (<left>, <center>, <right>), leave any of these blank if they are not needed
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvheader % Print the header
+
+\input{cv-sections/skills.tex}
+\input{cv-sections/experience.tex}
+\input{cv-sections/education.tex}
+
+\newpage % Force a new page for looks
+
+
+
+\end{document}

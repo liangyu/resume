@@ -1,0 +1,221 @@
+\documentclass[11pt]{article}
+
+%% Define some new colors
+\usepackage{xcolor}
+\definecolor{mBlue}{RGB}{51, 77, 167}
+\newcommand{\blue}[1]{{\color{mBlue}#1}}
+
+%% Page and text formatting
+\usepackage[left=0.75in, right=0.75in, top=1.0in, bottom=1.0in]{geometry} % margins
+\usepackage{setspace}
+\singlespacing % No more than 6 lines of text per inch
+\usepackage{amsmath, amsfonts}
+\usepackage[T1]{fontenc}
+\usepackage{times}
+
+%% Make the sections start with (a), (b), etc.
+\renewcommand\thesection{(\alph{section})}
+\renewcommand\thesubsection{(\alph{subsection})}
+
+%% Set up footer
+\usepackage{fancyhdr}
+\fancypagestyle{CVfooter}
+{
+ \lhead{}
+ \chead{}
+ \rhead{}
+ \lfoot{\small{\today}}
+ \cfoot{\small{\thepage/2}}
+ \rfoot{\small{L. Y.}}
+ \renewcommand{\headrulewidth}{0.0pt}
+ \renewcommand{\footrulewidth}{0.5pt}
+}
+
+%% Set up hyperlinks
+\usepackage[linktoc=page]{hyperref}
+\hypersetup{
+  colorlinks = true,
+  urlcolor = mBlue,
+  citecolor = mBlue,
+  linkcolor = mBlue,
+}
+
+
+
+%% Reduce whitespace around lists (globally)
+\usepackage{enumitem}
+\setlist[itemize]{nosep,left=0pt}
+\setlist[enumerate]{nosep}
+\setlist[description]{nosep}
+
+%% Formatting for sections
+\usepackage[compact]{titlesec}
+\titleformat*{\section}{\normalsize\bfseries}
+\titlespacing*{\section}{0mm}{2mm}{1mm}[0mm] % left top bottom right
+\titleformat*{\subsection}{\normalsize\bfseries}
+\titlespacing*{\subsection}{0mm}{2mm}{1mm}[0mm]
+\titleformat*{\subsubsection}{\normalsize\bfseries\itshape}
+\titlespacing*{\subsubsection}{0mm}{1mm}{0mm}[0mm]
+
+\begin{document}
+\pagestyle{CVfooter}
+
+\noindent \textbf{\uppercase{Liang Yu}}
+\vspace{2mm}
+
+\noindent \textbf{Full Stack Software Engineer}
+\vspace{1mm}
+
+\noindent\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}l r}
+Permanent Resident & Email: \href{mailto:yuliang.name@gmail.com}{yuliang.name@gmail.com} \\
+Boston, MA 02138 & Cell: 617-901-0618 \\
+\hline
+\end{tabular*}
+
+
+%----------------------------------------------------------------------------------------
+% Education SECTION
+% 2010.9 - 2012.12 MS in Computer Science, Northeastern Univerisity, Boston, MA, USA
+% 2005.9 - 2009.6 BS in Computational Mathematics, Nanchang University, Nanchang, Jiangxi, China
+%----------------------------------------------------------------------------------------
+\section{Education \& Courses}
+
+\begin{tabular}{l l l l}
+Computer Science & Northeastern Univeristy & Boston, MA, USA & M.S., 2012.12 \\
+Computational Mathematics & Nanchang University & Nanchang, Jiangxi, China & B.S., 2009.6 \\
+\end{tabular}
+
+
+\begin{tabular}{l l}
+Language: & C Programming Language, Program Design Paradigms in Lisp \\
+Algorigthms: & Data Structure in C, Algorithms, Advanced Algorithms \\
+Software: & Managing Software Development(Java), Parall Computing in MapReduce, Introduction to Database \\
+System: &Assemble Language(IBM X86), Computer System, High Performance Computing \\
+\end{tabular}
+
+
+\section{Skills}
+
+\begin{tabular}{l l}
+MacOS\&iOS: & Swift \textbullet{} SwiftUI \textbullet{} Objetive-C \textbullet{} Xcode \\
+System & CentOS, Red Hat, Ubuntu, C, C++, GDB, Shell \\
+Web & Java \textbullet{} Eclipse \textbullet{} REST \textbullet{} SOAP \textbullet{} Postman \textbullet{} Jmeter \\
+Networking: & SIP/RTP, TLS/SSL, IPSec, Wireshark, SIPP, EXFO, Fiddler \\
+Others: & MySQL GIT \textbullet{} SVN \textbullet{} Jira(Kanban,Scrum,Bug) \textbullet{} TestLink Pycharm LaTeX Python Lisp  Tcl \\
+\end{tabular}
+
+\noindent \textbf{\textit{\\ EXPERIENCE}}
+
+\section{Oracle America Inc. | Senior (since 2019) Software Engineer in Test}
+Bedford/Burlington, MA 2014.2 - 2020.11
+
+\begin{enumerate}
+
+\item \textbf{SBC Security Team}
+\begin{itemize}
+    \item two factor authentication
+    \item local users
+    \item authentication authorization
+    \item Executed tests related to authentication and authorization and accounting with remote AAA servers (TACAS+ and Radius)
+    \item Wrote test scripts for TACACS+ test. and simulate performance test to reproduce the customer's defect
+    \item Tested the DDOS pretection feature in the SBC
+\end{itemize}
+
+\item \textbf{SBC Virtualization on private cloud and public cloud}
+\begin{itemize}
+    \item Deployed the virtualized SBC and LInux VM on the AWS cloud and Azure cloud.
+    \item Integrated the EXFO APIs into the Tcl script to automate various performance test cases that would otherwise be repeated for different CPU core combinations (signaling, forwarding, Transcoding or DOS cores)
+    \item decreased the week sof mannual test effort to a couple of days and increased the usage of expensive test equipments in the night time
+    \item Installed the in-house made Anvil test framework on the VMs in the public clouds and sovled the library dependency issues. bring the automation test framework to the cloud enviroment
+    \item Designed the networking diagram for the testbed on the clouds and decumented it on the confluence page.
+    \item Performed Capacity Tests on the AWS and Azure platform
+    \item Tested teh SIP call between the AWS cloud and Azure cloud
+\end{itemize}
+
+\item Dedicated teacher and mentor, evidenced by numerous awards:
+\begin{itemize}
+    \item Spark Award, ``for inspiring the next generation of women in science'', Harvard, 2009
+    \item Fannie Cox Award, given annual
+\end{itemize}
+
+\item \textbf{SBC REST Interface Project}
+\begin{itemize}
+    \item Used the scrum board to track the work progress in the Agile mode.
+    \item Added hundres of test cases into automation testframe(RAID) to leverate the night time to run the daily regression test.
+    \item Used the Postman App to test SBC Configuration APIs.
+    \item Opened dozens of defects and helped developers to sort out their priorities and fix them.
+\end{itemize}
+
+\item \textbf{Tunnel Session Management Project} 
+
+Deployed to Linux, iOS and Android platforms \\
+function, capacity, performance, regression test, Testbed lab, automation test scripts, 
+
+\begin{itemize}
+  \item refoctory the test scripts to fit for cooperation, sort the functions into different files based on the purposes
+  \item Wrote scripts to automate more than 1,000 test cases for TSM SDK, which extened the test coverage by 5 times.
+  \item Built a real senario testbed with Android phone, iPhone, SBC, Zabbix monitoring, linux tools from multiple VMs.
+  \item Enhanced the exsited iOS/Linux/Android apps to test new features.
+  \item Wrote shell scripts to exectued the capacity and performance test.
+  \item Familiar with TLS/SSL protocols and socket programming in Linux Environment.
+  \item Designed test plan documents 
+  \item Raised 200+ product defects, including critical defects that affected performance and capacity. 
+  \item Coorperated with Dev Team, Datapath Team and Application Team to close the defects.
+
+\end{itemize}
+
+\end{enumerate}
+
+
+\section{Integrated Computer Solutioins | Software Developer}
+2013.4 - 2014.2 | Bedford, MA
+
+\begin{enumerate}
+
+\item Topics Project (Android App)
+\begin{itemize}
+    \item Wrote unit tests with pytest framework in Ubuntu environment.
+    \item 
+\end{itemize}
+
+\item Inkarus Project (Javascript Game on Windows Tablet)
+\begin{itemize}
+    \item Implemented a function to synchronize the score and screenshot of the winner to Azure Cloud and retrieve data from the cloud by using WinJS libraray and HTML5.
+    \item Implemented the Ads feature with the Microsoft Advertising SDK.
+\end{itemize}
+
+\end{enumerate}
+
+
+\section{Acme Packet | Software Developer Intern}
+2012.1 - 2012.8 | Bedford, MA
+
+\begin{enumerate}
+
+\item Application Session Controller (ASC) Project
+\begin{itemize}
+    \item Contributed to ASC automated testing framework by writing Python scripts.
+    \item Developed a Call-Transfer web service application by calling the SOAP API in Javascript.
+    \item Created VMs on the XenServer to run various SIP tests.
+\end{itemize}
+
+\end{enumerate}
+
+\section{TinBoston App | Apple iOS Developer}
+2017 - 2018 | Boston, MA
+
+\begin{enumerate}
+
+\item MVP 
+\begin{itemize}
+    \item Rewrote UI in SwfitUI,  REST API calls with Combine Framework
+    \item sfsdfsdft.
+    \item sfdsfsd.
+\end{itemize}
+
+\end{enumerate}
+
+
+
+\end{document}
+
