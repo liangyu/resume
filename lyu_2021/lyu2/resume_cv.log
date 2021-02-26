@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.4.7)  18 FEB 2021 15:44
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.4.7)  25 FEB 2021 17:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -903,101 +903,21 @@ LaTeX Info: Redefining \nameref on input line 27.
 \@outlinefile=\write6
 \openout6 = `resume_cv.out'.
 
-\headertextwidth=\skip82
-\headerphotowidth=\skip83
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.95116pt on input line 30.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.6658pt on input line 30.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.47559pt on input line 30.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 10.94882pt on input line 30.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 7.66417pt on input line 30.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.47441pt on input line 30.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
-(Font)              scaled to size 7.6pt on input line 30.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/sc' will be
-(Font)              scaled to size 7.6pt on input line 30.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 30.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/it' will be
-(Font)              scaled to size 9.0pt on input line 30.
-
-Overfull \hbox (1.46pt too wide) in paragraph at lines 30--30
-[]$[]$ $[]$$[]$ 
- []
-
-(./cv-sections/skills.tex
-LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
-(Font)              scaled to size 16.0pt on input line 5.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/b/n' will be
-(Font)              scaled to size 16.0pt on input line 5.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 17.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/b/n' will be
-(Font)              scaled to size 10.0pt on input line 17.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 17.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 9.00096pt on input line 17.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 6.00064pt on input line 17.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.00053pt on input line 17.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 8.99904pt on input line 17.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.99936pt on input line 17.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 17.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 17.
-
-Overfull \hbox (58.59431pt too wide) in alignment at lines 11--46
-[] [] 
- []
-
-) (./cv-sections/experience.tex
-LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/sl' in size <9> not avail
-able
-(Font)              Font shape `TU/SourceSansPro(2)/m/it' tried instead on inpu
-t line 28.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/it' will be
-(Font)              scaled to size 9.0pt on input line 28.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 28.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/sc' will be
-(Font)              scaled to size 8.0pt on input line 28.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 28.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/sl' in size <8> not avail
-able
-(Font)              Font shape `TU/SourceSansPro(2)/m/it' tried instead on inpu
-t line 28.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/it' will be
-(Font)              scaled to size 8.0pt on input line 28.
- [1
-
-]) (./cv-sections/education.tex) [2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 39.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 39.
-
-(./resume_cv.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 39.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 39.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 28.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 28.
+ (./resume_cv.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 28.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 28.
 Package rerunfilecheck Info: File `resume_cv.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 31798 strings out of 479418
- 629367 string characters out of 5884586
- 1069218 words of memory out of 5000000
- 48775 multiletter control sequences out of 15000+600000
- 536312 words of font info for 109 fonts, out of 8000000 for 9000
+ 31685 strings out of 479418
+ 624956 string characters out of 5884586
+ 1052246 words of memory out of 5000000
+ 48718 multiletter control sequences out of 15000+600000
+ 533246 words of font info for 65 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 67i,12n,112p,800b,422s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 67i,1n,112p,800b,268s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on resume_cv.pdf (2 pages).
+No pages of output.
