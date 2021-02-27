@@ -2,8 +2,8 @@
 \usepackage{fullpage}
 \usepackage{amsmath}
 \usepackage{amssymb}
-%\usepackage{fontspec}
-%\setmainfont[Color=primary, Path = fonts/lato/,BoldItalicFont=Lato-RegIta,BoldFont=Lato-Reg,ItalicFont=Lato-LigIta]{Lato-Lig}
+\usepackage{fontspec}
+\setmainfont[Color=primary, Path = fonts/lato/,BoldItalicFont=Lato-RegIta,BoldFont=Lato-Reg,ItalicFont=Lato-LigIta]{Lato-Lig}
 
 %\raggedbottom
 \raggedright
@@ -32,7 +32,7 @@
 
 \newcommand{\lineunder}{\vspace*{-8pt}\\\hspace*{-18pt}\hrulefill\\}
 
-\newcommand{\header}[1]{{\hspace*{-15pt}\vspace*{6pt}\LARGE{{#1}}}\vspace*{-6pt}\lineunder}
+\newcommand{\header}[1]{{\hspace*{-15pt}\vspace*{6pt}\large{{#1}}}\vspace*{-6pt}\lineunder}
 
 % command \employer
 % #1 Company Name   #3 Location
@@ -90,16 +90,24 @@
 
 % Skill
 % ---------------------------------------------------------------
-\header{Full Stack Skill Set}
+\header{Full Stack Skills}
 
-\begin{tabular}{r l}
+\begin{tabular}{l l}
 
-Programming: & Java, Swift/SwiftUI, Objective-C, C/C++, Python, Shell, Lisp, Tcl, GDB, sed, awk, \LaTeX \\
-Operation System: & macOS, iOS, CentOS, Ubuntu, Red Hat, Android \\
-Networking: & SIP/SIPp, Wireshark, EXFO, Zabbix, OpenSSL, OpenSSH, IPSec \\
-Web Development: & REST, SOAP, Postman, Jmeter, MySQL, Tomcat,  HTML5, Javascript, Flex, Dojo, Ajax, JSP, WAP \\
-Cloud/Virtualization: & AWS, Azure, VMWare ESXi, ServiceNow, Hadoop, MapReduce, Docker, Kubernetes \\
-Development Tools: & Xcode, Eclipse, PyCharm, IntelliJ IDEA, GIT, SVN, CI/CD, Jira, Kanban, Confluence, TestLink, Jenkins \\
+
+Project: & Agile, Scrum, Kanban, Confluence, Jira \\
+System: & macOS, Redhat, CentOS, Ubuntu, Unix \\
+Coding: & Java, C/C++, Python, Lisp, \LaTeX \\
+Scripting: & Shell, Tcl, sed, awk \\
+Testing: & GDB, Postman, Jmeter, Testlink, Wireshark, Zabbix, SIPp, EXFO \\
+Mobile: & iOS, Swfit, SwiftUI, Objective-C, Android \\
+Web : & Javascript, HTML, JSP, OpenSSL, OpenSSH \\
+Networking: & REST, SOAP, VoIP, SIP, IPSec, NAT  \\
+Backend: & Nginx, Tomcat, Redis, MySQL \\
+Cloud: & AWS, Azure, OCI, OpenStack, VMware \\
+DevOps: & GIT/SVN, Docker, Kubernetes, CI/CD \\
+Tools: & Xcode, Eclipse, PyCharm, IntelliJ IDEA, VIM \\
+
 
 \end{tabular}
 
@@ -117,9 +125,9 @@ Development Tools: & Xcode, Eclipse, PyCharm, IntelliJ IDEA, GIT, SVN, CI/CD, Ji
 % SBC Tunnel Session Management
 \company{Oracle}{Senior(since 2019) Software Engineer in Test}{Bedford/Burlington, MA}{6yr and 9mo.}{2014.2 - 2020.11}
 
-\project{SBC Tunnel Session Management}
+\project{SBC Tunnel Session Management(TSM)}
   \begin{achievements}
-\item Served as the solo test personal in TSM project, the "go-to" person on TSM urgent issues, documented 200+ defects, including critical performance and capacity issues.
+\item Served as the solo test personal in this project, the "go-to" person on TSM urgent issues, documented 200+ defects, including critical performance and capacity issues.
 \item Extended the test coverage of TSM SDK by 5 times and added 1000+ new automation test cases on iOS, Android and Linux platforms, refactored the Tcl scripts into shared library for better reusability.
 \item Built on-premise testbed with Android phones, iPhones, multiple SBC and 20 Linux VMs across 5 X5-2 Servers, setup Zobbix tool to monitor the network connections and data packets.
 \item Coordinated resources across QA, Datapath and Application teams to ensure urgent defects were fixed and verifed on schedule, and provided test guidance on customer-reported issues.
