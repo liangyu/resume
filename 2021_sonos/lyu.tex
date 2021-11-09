@@ -1,0 +1,231 @@
+\documentclass[10pt]{article}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fontspec}
+\setmainfont[Color=primary, Path = fonts/lato/,BoldItalicFont=Lato-RegIta,BoldFont=Lato-Reg,ItalicFont=Lato-LigIta]{Lato-Lig}
+
+%\raggedbottom
+\raggedright
+
+%  \renewcommand{\encodingdefault}{cg}
+  %\renewcommand{\rmdefault}{lgrcmr}
+
+
+%% Set up footer
+\usepackage{fancyhdr}
+\fancypagestyle{CVfooter}
+{
+ \lhead{}
+ \chead{}
+ \rhead{}
+ \lfoot{\small{\today}}
+ \cfoot{\small{\thepage/2}}
+ \rfoot{\small{L. Y.}}
+ \renewcommand{\headrulewidth}{0.0pt}
+ \renewcommand{\footrulewidth}{0.5pt}
+}
+
+
+%\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+% DEFINITIONS FOR RESUME
+
+\newcommand{\lineunder}{\vspace*{-8pt}\\\hspace*{-18pt}\hrulefill\\}
+
+\newcommand{\header}[1]{{\hspace*{-15pt}\vspace*{6pt}\large{{#1}}}\vspace*{-6pt}\lineunder}
+
+% command \employer
+% #1 Company Name   #3 Location
+% #2 Title          #4 Duration #5 Period
+\newcommand{\company}[5]{
+    \large{\textbf{#1}}\hfill \small{#3}\\
+    #2\hfill \small{#4}\small{#5}\\
+}
+
+\newcommand{\project}[1]{\checkmark\normalsize{{\emph{#1}}}\\}
+
+
+\newenvironment{achievements}
+    {\begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -1pt}} 
+    {\end{list}}
+
+% Education
+% command \college
+% #1 University Name - #2 University Location     #3 Time Period
+% #4 Degre & Major
+% $5 Related Courses
+
+\newcommand{\college}[5]{
+    \textbf{#1 #2} \hfill #3 \\ #4 \\ #5
+}
+
+% --------------------------------
+% END RESUME DEFINITIONS
+% --------------------------------
+\begin{document}
+\pagestyle{CVfooter}
+
+% Title
+% ---------------------------------------------------------------
+\vspace*{-40pt}
+\begin{center}
+{\LARGE \scshape {YU, LIANG}}
+\end{center}
+
+%Green Card holder, No Sponsorship Required, Relocation OK
+%Published iOS App "TinBoston" in App Store
+
+
+\begin{center}
+
+\begin{tabular}{l l}
+\small{Permanent Resident}    & \small{yuliang.name@gmail.com} \\
+\small{Published iOS App "TinBoston" in App Store}         & \small{Boston 617.901.0618} \\
+\end{tabular}
+
+\end{center}
+
+
+
+% Skill
+% ---------------------------------------------------------------
+\header{Full Stack Skills}
+
+\begin{tabular}{l l}
+
+Project: & Agile, Scrum board, Kanban, Confluence, Jira, Slack \\
+System: & macOS, Redhat, CentOS, Ubuntu \\
+Coding: & Java, C/C++, Python, Lisp, \LaTeX \\
+Scripting: & Shell, Tcl, sed, awk \\
+Testing: & GDB, LLDB, Postman, Jmeter, Testlink, Wireshark, Zabbix, SIPp, EXFO, TestCenter \\
+Mobile: & iOS, Swfit, SwiftUI, Objective-C, Android \\
+Web : & Javascript, HTML, JSP \\
+Networking: & REST, SOAP, VoIP, SIP, IPSec, OpenSSL, OpenSSH \\
+Backend: & Nginx, Tomcat, Redis, MySQL \\
+Cloud: & AWS, Azure, VMware \\
+DevOps: & GIT/SVN, Docker, Kubernetes, CI/CD \\
+Tools: & Xcode, Eclipse, PyCharm, IntelliJ IDEA, VIM, Homebrew \\
+
+\end{tabular}
+\vspace*{10pt}
+
+% Experience
+% ---------------------------------------------------------------
+\header{Experience}
+
+% command \employer
+% #1 Company Name   #3 Location
+% #2 Title          #4 Duration #5 Period
+
+% SBC Tunnel Session Management
+\vspace*{10pt}
+\company{Casa Systems}{Senior Software Test Engineer}{Andover, MA}{4mo. }{2021.4 - current}
+\project{SmokeTest Tool for Multi-service Router(MSR)}
+ \begin{achievements}
+\item Served as the solo engineer to create this python-based automation tool from scrach for 10+ developers
+\item Self-driven to crash thousands of pages of documents to automate the Spirent Test Center via its ReST API in Python.
+\item Installed the requied Dell servers and VMs in the lab.
+\item Cooperated with the China team to reproduce the defects and verify the fixes.
+ \end{achievements}
+
+\vspace*{5pt}
+
+\company{Oracle}{Senior(since 2019) Software Test Engineer}{Bedford/Burlington, MA}{6yr and 9mo. }{2014.2 - 2020.11}
+
+\project{Tunnel Session Management(TSM)}
+  \begin{achievements}
+\item Served as the "go-to" person on TSM urgent issues, documented 200+ defects, improved test coverage by 5 times more for TSM SDK by crafting 1000+ test cases. 
+\item Wrote new automation test scripts, refactored the existing Tcl scripts into shared libraries for better reusability.
+\item Built on-premise testbed with Android phones, iPhones, multiple SBC and 20 Linux VMs across 5 X5-2 Servers, setup Zabbix tool to monitor the network connections and data packets.
+\item Coordinated resources across QA, Developer teams to ensure urgent defects were fixed and verified on schedule, and provided test guidance on customer-reported issues.
+  \end{achievements}
+
+\project{Session Border Controller(SBC)}
+  \begin{achievements}
+\item Be the first to write the Tcl scripts to automate the TACACS+ test cases and reproduced the urgent customer defects with shell scripts.
+\item Deployed virtualized SBC and Linux VMs on the AWS and Azure cloud, led the effort to migrate the Anvil Test framework to the cloud.
+\item Integrated EXFO APIs into Tcl scripts to automate multiple performance test cases, decreased weeks of manual test effort for different vm core combinations to a couple of days and increased the usage of expensive test equipments in the night time.
+\item Used SIPp tool to initiate SIP calls between SBC on AWS and Azure clouds, configured openssl certificates in SBC, verified the strong ciphers were used in the VOIP calls.
+\item Collaborated with Dev team in a fast-paced Agile environment, ensured code quality by leveraging TDD method.
+\item Served as the test expert to test the SBC configuration REST API with automation scripts and Postman tool, opened dozens of defects and provided guidance to sort out the priority.
+  \end{achievements}
+
+\vspace*{5pt}
+
+  \company{Integrated Computer Solutions}{Software Enginner}{Bedford, MA}{11mo. }{2013.4 - 2014.2}
+
+    \project{Inkarus HTML5/Javascript Game Project}
+  \begin{achievements}
+\item Implemented the data sychronization between the Azure Cloud and the application running on the Windows 8 tablet.
+\item Implemented the advertisement feature on the GameOver page by leveraging the Microsoft Advertising SDK.
+  \end{achievements}
+
+\vspace*{5pt}
+  \company{Acme Packet}{Software Enginner Intern}{Bedford, MA}{8mo. }{2012.1 - 2012.9}
+
+  \project{Applicatioin Session Controller(ASC) Team}
+  \begin{achievements}
+\item Developed the Call-Transfer web services application with Java, Dojo and GWT/GXT.
+\item Helped with ASC automated testing framework by writing test cases in Python.
+\item Enhanced the quality of an existing iOS mobile application by fixing bugs and improved its UI and workflow by implementing good interface design principles.
+  \end{achievements}
+
+% School
+\vspace*{5pt}
+  \company{Northeastern Univeristy}{Student}{Boston, MA}{2yr. }{2010.9 - 2012.12}
+
+  \project{Mutliple Projects}
+  \begin{achievements}
+\item Processed 1.7 billions twitter messages and 50 millions stock records with Hadoop on a ten-node cluster.
+\item Used Pig Scripts to sample of the twitter messages and Java to implement the algorithms.
+\item Analyzed the implementation of MTCP under Linux and listed all the differences in Mac OS X.
+\item Probed the memory boundaries(stack, heap, data and text sections) of a process under Mac OS X, by using self-defined SIGSEGV handler and setlongjump call() in C.
+\item Wrote c codes to mimic the mirroring, string, RAID3 and RAID5 operations.
+\item Implemented a file system with methods like mkdir, rm, read, write and ls.
+\item Wrote network-flow avator in Java and wrote unit tests to ensure it can be integrated into the exsited SCG Arena.
+\item Used Jenkins Continuous Integration System to do the build automation.
+\item Used EclEmma to measure the test coverage in the SCG project.
+  \end{achievements}
+
+\vspace*{10pt}
+
+% Education
+% ---------------------------------------------------------------
+% command \college
+% #1 University Name - #2 University Location     #3 Time Period
+% #4 Degre & Major
+% $5 Related Courses
+
+\header{Education}
+
+\college{Northeastern University}{- Boston, USA} {2010.9 - 2012.12}
+{M.S. in Computer Science}
+{
+\begin{itemize}
+  \setlength{\itemsep}{0pt}
+  \setlength{\parsep}{0pt}
+  \setlength{\parskip}{0pt}
+  \item {Computer System $\diamond$ High Performance Computing}
+  \item {Parallel Computing in MapReduce $\diamond$ Introduce to Database}
+  \item {Managing Software Development in \textbf{Java}}
+  \item {Program Design Paradigms in Lisp $\diamond$ Advanced Algorithms}  
+\end{itemize}
+}
+
+\vspace*{5pt}
+
+\college{Nanchang University}{- Nanchang, China} {2005.9 - 2009.6}
+{B.S. in Computational Mathematics}
+{
+\begin{itemize}
+  \setlength{\itemsep}{0pt}
+  \setlength{\parsep}{0pt}
+  \setlength{\parskip}{0pt}
+  \item {Assembly Language(IBM X86) $\diamond$ Foundation of Program Design in \textbf{C}}
+  \item {Numerical Approximation $\diamond$ Data Structure in \textbf{C} $\diamond$ Discrete Mathematics}
+\end{itemize}
+}
+
+% End of Education
+\end{document}
